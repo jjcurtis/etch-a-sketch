@@ -9,6 +9,7 @@ html {
 
 .column {
     display: flex;
+    border: 0px;
 }
 
 div {
