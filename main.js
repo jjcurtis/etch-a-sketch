@@ -22,8 +22,23 @@ for (let i = 0; i < divCount; i++) {
 }    
     
 let squares = document.querySelectorAll('.square');
-    squares.forEach(square => {
-        square.addEventListener('mouseover', () => {
-            square.style.backgroundColor = 'red';
-        })
+squares.forEach(square => {
+square.addEventListener('mouseover', () => {
+        square.style.backgroundColor = 'red';
     })
+})
+
+// let gridSize = document.querySelector('.button');
+// gridSize.addEventListener('click', () => {
+//     let number = prompt('Enter the number of squares per side');
+//     if (number < 100) {
+//         column.forEach(column => {
+//             column.remove();
+//             column.appendChild('div')
+//         })
+//         divCount = number;
+//         return divCount;
+//     } else {
+
+//     }
+// })

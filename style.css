@@ -7,6 +7,15 @@ html {
     flex-direction: column;
 }
 
+.button {
+    display: block;
+    margin: .5rem auto;
+    padding: 10px;
+    color: red;
+    background-color: black;
+    font: oblique bold 33px 'Helvetica';
+}
+
 .column {
     display: flex;
     border: 0px;
