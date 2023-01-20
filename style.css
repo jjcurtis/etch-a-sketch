@@ -1,5 +1,8 @@
 html {
     box-sizing: border-box;
+    max-width: 960px;
+    max-height: 960px;
+    margin: auto;
 }
 
 .body {
@@ -7,9 +10,9 @@ html {
     flex-direction: column;
 }
 
-.button {
+button {
     display: block;
-    margin: .5rem auto;
+    margin:  1% auto;
     padding: 10px;
     color: red;
     background-color: black;
@@ -22,7 +25,6 @@ html {
 }
 
 div {
-    min-height: 50px;
-    border: 3px solid black;
+    min-height: 10px;
     flex: 1;
 }
