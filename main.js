@@ -1,7 +1,21 @@
-let gridSize = document.querySelector('button');
+const gridSize = document.querySelector('button');
+const page = document.querySelector('body'); 
+
+let count = 0;
 
 gridSize.addEventListener('click', () => {
-    const body = document.querySelectorAll('.body');
+    count += 1;
+
+    if (count > 1) {
+        const grid = document.querySelectorAll('.grid');
+        grid.forEach(grid => grid.remove());
+    }
+
+    let createDiv = document.createElement('div');
+    createDiv.className = 'grid';
+    page.appendChild(createDiv);
+
+    const grid = document.querySelectorAll('.grid');
     let number = parseInt(prompt('Enter the number of squares per side'));
     let divCount;
     divCount = number;
@@ -10,10 +24,10 @@ gridSize.addEventListener('click', () => {
     }
 
     for (let i = 0; i < divCount; i++) {
-        body.forEach(body => {
+        grid.forEach(grid => {
             let createDiv = document.createElement('div');
             createDiv.className = 'column';
-            body.appendChild(createDiv);
+            grid.appendChild(createDiv);
         })
     }
     
@@ -37,7 +51,4 @@ gridSize.addEventListener('click', () => {
 
     let divs = document.querySelectorAll('div');
     divs.forEach(div => div.style.border = '2px solid black');
-
-    gridSize.remove();
 })
-
