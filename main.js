@@ -45,7 +45,8 @@ gridSize.addEventListener('click', () => {
     let squares = document.querySelectorAll('.square');
     squares.forEach(square => {
     square.addEventListener('mouseover', () => {
-        square.style.backgroundColor = 'purple';
+        let rainbow = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+        square.style.backgroundColor = rainbow[Math.floor(Math.random() * rainbow.length)];
         })
     })
 
